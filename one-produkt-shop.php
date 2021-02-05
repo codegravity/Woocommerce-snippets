@@ -1,6 +1,6 @@
 <?php
 /*  misc functions for simple 1 product web shop */
-
+/* to be added to functions.php file  */
 
 /* -----------  Woocommerce functions ----------- */
 // remove cart when purchase complete a short code for paysson checkout
