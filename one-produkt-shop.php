@@ -4,7 +4,7 @@
 
 /* -----------  Woocommerce functions ----------- */
 // remove cart when purchase complete a short code for paysson checkout
-	# check if checkout page
+// check if checkout page
 function cg_paysson_cart_func( $atts ){
 	if ( is_Page('kassan')){
 			if ( is_wc_endpoint_url( 'order-received' ) ) {
@@ -180,8 +180,9 @@ function custom_override_checkout_fields( $fields ) {
 }
 
 // will produce code before the form
-#add_action('woocommerce_before_checkout_form','show_cart_summary',9);
 // gets the cart template and outputs it before the form
+add_action('woocommerce_before_checkout_form','show_cart_summary',9);
+
 function show_cart_summary( ) {
   wc_get_template_part( 'cart/cart' );
 }
